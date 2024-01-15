@@ -509,11 +509,12 @@ img {
     margin-bottom: var(--mb-4);
 }
 
-.portfolio__img {
-    margin-left: 25px;
+.portfolio__img, .portfolio__content video{
     margin-top: var(--mb-2);
-    width: 22vw;
-    transition: .4s;
+    width: 90%;
+    margin-left: 5%;
+    transition: .4s;  
+    
 }
 
 .portfolio__data {
@@ -535,8 +536,10 @@ img {
     box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
 }
 
-.portfolio__content:hover .portfolio__img {
-    transform: scale(1.1)
+.portfolio__content:hover .portfolio__img, .portfolio__content video:hover {
+    
+    transform: scale(1.1);
+    transform-origin: top center;
 }
 
 .portfolio__container {
