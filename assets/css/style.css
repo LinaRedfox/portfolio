@@ -504,21 +504,21 @@ img {
 .portfolio__content {
     background-color: #fff;
     border-radius: .5rem;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
     margin-bottom: var(--mb-4);
 }
 
 .portfolio__img, .portfolio__content video{
-    margin-top: var(--mb-2);
+    margin-top: var(--mb-2);    
     width: 90%;
     margin-left: 5%;
-    transition: .4s;  
-    
+    transition: .4s;      
 }
 
-.portfolio__data {
+.portfolio__data {    
     padding: 1.5rem;
+    margin-bottom: 0;
 }
 
 .portfolio__subtitle {
@@ -529,7 +529,7 @@ img {
 .portfolio__title {
     font-size: var(--h3-font-size);
     color: var(--first-color);
-    margin: var(--mb-2) 0;
+    /* margin: var(--mb-2) 0; */
 }
 
 .portfolio__content:hover {
@@ -547,17 +547,6 @@ img {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
 }
-/* 
-.something{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-} */
-
-/* Active menu portfolio подсветка выбранного фильтра заказов*/
-/* .active-portfolio{
-    color: var(--first-color-dark);
-    font-weight: var(--font-semi-bold);
-} */
 
 .testimonial__content {
     display: grid;
@@ -639,8 +628,8 @@ img {
 }
 
 .contact__input {
-    width: 100%;
-    padding: 1rem;
+    width: 100%;    
+    padding: 1rem;    
     border: 2px solid var(--first-color-light);
     color: var(--first-color);
     border-radius: .5rem;
