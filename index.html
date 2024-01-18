@@ -23,7 +23,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <!-- Не хватает секций квалификации и еще 2 -->
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                     <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
@@ -68,7 +68,7 @@
                             ipsa
                             tenetur distinctio corrupti exercitationem laboriosam incidunt, ex expedita nobis recusandae
                             neque nulla eius!</span></p>
-                    <div >
+                    <div>
                         <span class="about__number">Best Achievement - </span>
                         <span class="about__achievement">Still alive</span>
                     </div>
@@ -213,36 +213,43 @@
             <h2 class="section-title">Portfolio</h2>
 
             <div class="portfolio__nav">
-                <span class="portfolio__item active-portfolio">All</span>
-                <span class="portfolio__item" data-filter="coding">Coding</span>
-                <span class="portfolio__item" data-filter="design">Design</span>
-                <span class="portfolio__item" data-filter="montage">Montage</span>
+                <div class="filter_buttons">
+                    <button class="portfolio__item active-portfolio" data-filter="all">All</button>
+                    <button class="portfolio__item" data-filter="coding">Coding</button>
+                    <button class="portfolio__item" data-filter="design">Design</button>
+                    <button class="portfolio__item" data-filter="montage">Montage</button>
+                </div>
             </div>
 
-            <div class="portfolio__container">                
-                <div class="portfolio__content">
-                    <a href="https://linaredfox.github.io/sushi-website/"><img src="assets/img/work2.png" alt="" class="portfolio__img"></a>
+            <div class="portfolio__container">
+                <div class="portfolio__content" data-filter="coding">
+                    <a href="https://linaredfox.github.io/sushi-website/"><img src="assets/img/work2.png" alt=""
+                            class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Landing page 1</span>
                         <a href="#">
                             <h2 class="portfolio__title">Portfolio website done for demonstration</h2>
                         </a>
-                        <a href="https://linaredfox.github.io/sushi-website/" class="button button-link">View Details</a>
+                        <a href="https://linaredfox.github.io/sushi-website/" class="button button-link">View
+                            Details</a>
                     </div>
                 </div>
-                <div class="portfolio__content">
-                    <a href="https://linaredfox.github.io/watches-website/"><img src="assets/img/work1.png" alt="" class="portfolio__img"></a>
+                <div class="portfolio__content" data-filter="coding">
+                    <a href="https://linaredfox.github.io/watches-website/"><img src="assets/img/work1.png" alt=""
+                            class="portfolio__img"></a>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Landing page 2</span>
                         <a href="#">
                             <h2 class="portfolio__title">Portfolio website done for demonstration</h2>
                         </a>
-                        <a href="https://linaredfox.github.io/watches-website/" class="button button-link">View Details</a>
+                        <a href="https://linaredfox.github.io/watches-website/" class="button button-link">View
+                            Details</a>
                     </div>
                 </div>
-                <div class="portfolio__content">                    
-                    <video  src="assets/img/parallax.mov" onmouseover="this.play();" onmouseout="this.pause();this.currentTime=0;"  muted>                     
-                        </video>    
+                <div class="portfolio__content" data-filter="design" >
+                    <video src="assets/img/parallax.mov" onmouseover="this.play();"
+                        onmouseout="this.pause();this.currentTime=0;" muted>
+                    </video>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">3D Parallax effect</span>
                         <a href="#">
@@ -251,8 +258,9 @@
                         <!-- <a href="#" class="button button-link">View More</a> -->
                     </div>
                 </div>
-                <div class="portfolio__content">
-                    <video  src="assets/img/work_4.mp4" onmouseover="this.play();" onmouseout="this.pause();this.currentTime=0;" controls muted></video>  
+                <div class="portfolio__content" data-filter="montage">
+                    <video src="assets/img/work_4.mp4" onmouseover="this.play();"
+                        onmouseout="this.pause();this.currentTime=0;" controls muted></video>
                     <div class="portfolio__data">
                         <span class="portfolio__subtitle">Reels promo</span>
                         <a href="#">
@@ -293,8 +301,10 @@
                     <span class="testimonial__client">Client</span>
                     <p class="testimonial__description">Super optimal.</p>
                 </div>
+                <p class="comment">*All reviews are fictitious and are for informational purposes only.</p>
             </div>
         </section>
+
 
         <!-- CONTACT ME -->
         <section class="contacts section bd-container" id="contacts">
@@ -325,8 +335,10 @@
                         <i class='bx bx-chat contact__icon'></i>
                         <h3 class="contact__title">Chat</h3>
                         <div>
-                            <a href="https://wa.me/79112352989" class="contact__social"><i class='bx bxl-whatsapp-square'></i></a>
-                            <a href="https://t.me/lLina_Lissl" class="contact__social"><i class='bx bxl-telegram'></i></a>
+                            <a href="https://wa.me/79112352989" class="contact__social"><i
+                                    class='bx bxl-whatsapp-square'></i></a>
+                            <a href="https://t.me/lLina_Lissl" class="contact__social"><i
+                                    class='bx bxl-telegram'></i></a>
                             <!-- <a href="#" class="contact__social"><i class='bx bxl-discord'></i></a> -->
                         </div>
                     </div>
@@ -351,14 +363,14 @@
     <!--  FOOTER-->
     <footer class="footer">
         <div class="footer__description footer-container bd-container">
-            <h1 class="footer__title">Lina Liss</h1>
+            <!-- <h1 class="footer__title">Lina Liss</h1>
             <p class="footer__description">This is my personal website, consult me here</p>
 
             <div class="footer__social">
                 <a href="#" class="footer__link"><i class='bx bx-link-external'></i></a>
-            </div>
+            </div> -->
 
-            <p class="footer__copy"> &#169 2024 lina_redfoxx. All rights reserved</p>
+            <p class="footer__copy"> <br> <br> <br> &#169 2024 lina_redfoxx. All rights reserved</p>
         </div>
 
     </footer>
